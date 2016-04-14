@@ -1,18 +1,18 @@
 //
-//  NavigationController.m
-//  App-Growing
+//  ViewController1.m
+//  ScrollDemo
 //
-//  Created by 潘柏信 on 16/4/14.
-// Copyright © 2016年 leopard. All rights reserved.
+//  Created by baixinpan on 16/4/11.
+//  Copyright © 2016年 baixinpan. All rights reserved.
 //
 
-#import "NavigationController.h"
+#import "ViewController1.h"
 
-@interface NavigationController ()
+@interface ViewController1 ()
 
 @end
 
-@implementation NavigationController
+@implementation ViewController1
 
 - (void)viewDidLoad {
     [super viewDidLoad];

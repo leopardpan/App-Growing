@@ -6,8 +6,8 @@
 //  Copyright © 2016年 leopard. All rights reserved.
 //
 
-#import "BaseViewController.h"
+#import "ScrollerViewController.h"
 
-@interface DiscoverViewController : BaseViewController
+@interface DiscoverViewController : ScrollerViewController
 
 @end

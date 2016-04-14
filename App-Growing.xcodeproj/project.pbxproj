@@ -14,6 +14,10 @@
 		D6D022731CBFAE4000B70A87 /* HorizonalTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6D0226E1CBFAE4000B70A87 /* HorizonalTableViewController.m */; };
 		D6D022741CBFAE4000B70A87 /* ScrollerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6D022701CBFAE4000B70A87 /* ScrollerViewController.m */; };
 		D6D022751CBFAE4000B70A87 /* TitleBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = D6D022721CBFAE4000B70A87 /* TitleBarView.m */; };
+		D6D0227F1CBFB3B900B70A87 /* ViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = D6D022781CBFB3B900B70A87 /* ViewController1.m */; };
+		D6D022801CBFB3B900B70A87 /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = D6D0227A1CBFB3B900B70A87 /* ViewController2.m */; };
+		D6D022811CBFB3B900B70A87 /* ViewController3.m in Sources */ = {isa = PBXBuildFile; fileRef = D6D0227C1CBFB3B900B70A87 /* ViewController3.m */; };
+		D6D022821CBFB3B900B70A87 /* ViewController4.m in Sources */ = {isa = PBXBuildFile; fileRef = D6D0227E1CBFB3B900B70A87 /* ViewController4.m */; };
 		D6FB47C91CBFA05400282234 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D6FB47C81CBFA05400282234 /* main.m */; };
 		D6FB47CC1CBFA05400282234 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D6FB47CB1CBFA05400282234 /* AppDelegate.m */; };
 		D6FB47D21CBFA05400282234 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6FB47D01CBFA05400282234 /* Main.storyboard */; };
@@ -49,6 +53,15 @@
 		D6D022701CBFAE4000B70A87 /* ScrollerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollerViewController.m; sourceTree = "<group>"; };
 		D6D022711CBFAE4000B70A87 /* TitleBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitleBarView.h; sourceTree = "<group>"; };
 		D6D022721CBFAE4000B70A87 /* TitleBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TitleBarView.m; sourceTree = "<group>"; };
+		D6D022761CBFB0F000B70A87 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		D6D022771CBFB3B900B70A87 /* ViewController1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController1.h; sourceTree = "<group>"; };
+		D6D022781CBFB3B900B70A87 /* ViewController1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController1.m; sourceTree = "<group>"; };
+		D6D022791CBFB3B900B70A87 /* ViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController2.h; sourceTree = "<group>"; };
+		D6D0227A1CBFB3B900B70A87 /* ViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController2.m; sourceTree = "<group>"; };
+		D6D0227B1CBFB3B900B70A87 /* ViewController3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController3.h; sourceTree = "<group>"; };
+		D6D0227C1CBFB3B900B70A87 /* ViewController3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController3.m; sourceTree = "<group>"; };
+		D6D0227D1CBFB3B900B70A87 /* ViewController4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController4.h; sourceTree = "<group>"; };
+		D6D0227E1CBFB3B900B70A87 /* ViewController4.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController4.m; sourceTree = "<group>"; };
 		D6FB47C31CBFA05400282234 /* App-Growing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "App-Growing.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6FB47C71CBFA05400282234 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D6FB47C81CBFA05400282234 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -89,6 +102,14 @@
 			children = (
 				D6D022631CBFADAE00B70A87 /* DiscoverViewController.h */,
 				D6D022641CBFADAE00B70A87 /* DiscoverViewController.m */,
+				D6D022771CBFB3B900B70A87 /* ViewController1.h */,
+				D6D022781CBFB3B900B70A87 /* ViewController1.m */,
+				D6D022791CBFB3B900B70A87 /* ViewController2.h */,
+				D6D0227A1CBFB3B900B70A87 /* ViewController2.m */,
+				D6D0227B1CBFB3B900B70A87 /* ViewController3.h */,
+				D6D0227C1CBFB3B900B70A87 /* ViewController3.m */,
+				D6D0227D1CBFB3B900B70A87 /* ViewController4.h */,
+				D6D0227E1CBFB3B900B70A87 /* ViewController4.m */,
 			);
 			path = Discover;
 			sourceTree = "<group>";
@@ -209,6 +230,7 @@
 			children = (
 				D6FB47C71CBFA05400282234 /* Info.plist */,
 				D6FB47C81CBFA05400282234 /* main.m */,
+				D6D022761CBFB0F000B70A87 /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -397,13 +419,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6D022741CBFAE4000B70A87 /* ScrollerViewController.m in Sources */,
+				D6D022801CBFB3B900B70A87 /* ViewController2.m in Sources */,
 				D6FB47F51CBFAC8F00282234 /* TabBarController.m in Sources */,
 				D6D022651CBFADAE00B70A87 /* DiscoverViewController.m in Sources */,
 				D6D022751CBFAE4000B70A87 /* TitleBarView.m in Sources */,
 				D6D022621CBFAD9900B70A87 /* BaseViewController.m in Sources */,
+				D6D022811CBFB3B900B70A87 /* ViewController3.m in Sources */,
 				D6FB47F81CBFACC100282234 /* NavigationController.m in Sources */,
 				D6D022681CBFADBB00B70A87 /* HomePageViewController.m in Sources */,
 				D6D022731CBFAE4000B70A87 /* HorizonalTableViewController.m in Sources */,
+				D6D0227F1CBFB3B900B70A87 /* ViewController1.m in Sources */,
+				D6D022821CBFB3B900B70A87 /* ViewController4.m in Sources */,
 				D6FB47CC1CBFA05400282234 /* AppDelegate.m in Sources */,
 				D6FB47C91CBFA05400282234 /* main.m in Sources */,
 				D6D0226B1CBFADC700B70A87 /* MineViewController.m in Sources */,
@@ -535,6 +561,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PREFIX_HEADER = "App-Growing/PrefixHeader.pch";
 				INFOPLIST_FILE = "App-Growing/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -547,6 +574,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PREFIX_HEADER = "App-Growing/PrefixHeader.pch";
 				INFOPLIST_FILE = "App-Growing/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
