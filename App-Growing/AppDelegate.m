@@ -7,7 +7,19 @@
 //
 
 #import "AppDelegate.h"
-#import "TabBarController.h"
+#import "NavigationController.h"
+#import "RDVTabBarController.h"
+#import "RDVTabBarItem.h"
+
+#import "HomePageViewController.h"
+#import "DiscoverViewController.h"
+#import "MineViewController.h"
+
+
+#import "ViewController1.h"
+#import "ViewController2.h"
+#import "ViewController3.h"
+#import "ViewController4.h"
 
 @interface AppDelegate ()
 
@@ -20,32 +32,88 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
-    self.window.rootViewController = [[TabBarController alloc] init];
+    [self setupViewControllers];
+    [self.window setRootViewController:self.viewController];
     [self.window makeKeyAndVisible];
     
+    [self customizeInterface];
     return YES;
 }
 
-- (void)applicationWillResignActive:(UIApplication *)application {
-    // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-    // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
+- (void)setupViewControllers {
+    
+    // homepage
+    HomePageViewController *hpVC = [[HomePageViewController alloc] init];
+    hpVC.title = @"主页";
+    NavigationController *navHp = [[NavigationController alloc] initWithRootViewController:hpVC];
+    
+    // discover
+    ViewController1 *vc1 = [[ViewController1 alloc] init];
+    ViewController2 *vc2 = [[ViewController2 alloc] init];
+    ViewController3 *vc3 = [[ViewController3 alloc] init];
+    ViewController4 *vc4 = [[ViewController4 alloc] init];
+    DiscoverViewController *disVC = [[DiscoverViewController alloc] initWithTitle:@"发现" andSubTitles:@[@"视图1", @"视图2", @"视图3", @"视图4"]andControllers:@[vc1, vc2, vc3,vc4] underTabbar:NO];
+    NavigationController *navDic = [[NavigationController alloc] initWithRootViewController:disVC];
+    
+    // mine
+    MineViewController *mineVC = [[MineViewController alloc] init];
+    mineVC.title = @"我的";
+    NavigationController *navMine = [[NavigationController alloc] initWithRootViewController:mineVC];
+    
+    RDVTabBarController *tabBarController = [[RDVTabBarController alloc] init];
+    [tabBarController setViewControllers:@[navHp, navDic,navMine]];
+    self.viewController = tabBarController;
+    
+    [self customizeTabBarForController:tabBarController];
 }
 
-- (void)applicationDidEnterBackground:(UIApplication *)application {
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-    // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+- (void)customizeTabBarForController:(RDVTabBarController *)tabBarController {
+    UIImage *finishedImage = [UIImage imageNamed:@"tabbar_selected_background"];
+    UIImage *unfinishedImage = [UIImage imageNamed:@"tabbar_normal_background"];
+    NSArray *tabBarItemImages = @[@"first", @"second", @"third"];
+    
+    NSInteger index = 0;
+    for (RDVTabBarItem *item in [[tabBarController tabBar] items]) {
+        [item setBackgroundSelectedImage:finishedImage withUnselectedImage:unfinishedImage];
+        UIImage *selectedimage = [UIImage imageNamed:[NSString stringWithFormat:@"%@_selected",
+                                                      [tabBarItemImages objectAtIndex:index]]];
+        UIImage *unselectedimage = [UIImage imageNamed:[NSString stringWithFormat:@"%@_normal",
+                                                        [tabBarItemImages objectAtIndex:index]]];
+        [item setFinishedSelectedImage:selectedimage withFinishedUnselectedImage:unselectedimage];
+        
+        index++;
+    }
 }
 
-- (void)applicationWillEnterForeground:(UIApplication *)application {
-    // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
-}
-
-- (void)applicationDidBecomeActive:(UIApplication *)application {
-    // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-}
-
-- (void)applicationWillTerminate:(UIApplication *)application {
-    // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+- (void)customizeInterface {
+    UINavigationBar *navigationBarAppearance = [UINavigationBar appearance];
+    
+    UIImage *backgroundImage = nil;
+    NSDictionary *textAttributes = nil;
+    
+    if (NSFoundationVersionNumber > NSFoundationVersionNumber_iOS_6_1) {
+        backgroundImage = [UIImage imageNamed:@"navigationbar_background_tall"];
+        
+        textAttributes = @{
+                           NSFontAttributeName: [UIFont boldSystemFontOfSize:18],
+                           NSForegroundColorAttributeName: [UIColor blackColor],
+                           };
+    } else {
+#if __IPHONE_OS_VERSION_MIN_REQUIRED < __IPHONE_7_0
+        backgroundImage = [UIImage imageNamed:@"navigationbar_background"];
+        
+        textAttributes = @{
+                           UITextAttributeFont: [UIFont boldSystemFontOfSize:18],
+                           UITextAttributeTextColor: [UIColor blackColor],
+                           UITextAttributeTextShadowColor: [UIColor clearColor],
+                           UITextAttributeTextShadowOffset: [NSValue valueWithUIOffset:UIOffsetZero],
+                           };
+#endif
+    }
+    
+    [navigationBarAppearance setBackgroundImage:backgroundImage
+                                  forBarMetrics:UIBarMetricsDefault];
+    [navigationBarAppearance setTitleTextAttributes:textAttributes];
 }
 
 @end
