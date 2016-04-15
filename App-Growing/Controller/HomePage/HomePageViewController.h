@@ -7,7 +7,9 @@
 //
 
 #import "BaseViewController.h"
+#import "BannerView.h"
 
 @interface HomePageViewController : BaseViewController
 
 @end
+
