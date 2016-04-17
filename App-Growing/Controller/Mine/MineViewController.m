@@ -7,6 +7,7 @@
 //
 
 #import "MineViewController.h"
+#import "UITableView+Flexible.h"
 
 @interface MineViewController ()
 
@@ -16,22 +17,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self setupTableView];
+    
     // Do any additional setup after loading the view.
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)setupTableView
+{
+    [self.tableView addFlexibleImage:[UIImage imageNamed:@"003.jpg"]];
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

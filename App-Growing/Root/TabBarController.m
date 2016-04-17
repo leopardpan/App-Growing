@@ -37,7 +37,7 @@
 - (void)setupViewControllers {
     
     // homepage
-    HomePageViewController *hpVC = [[HomePageViewController alloc] init];
+    HomePageViewController *hpVC = [[UIStoryboard storyboardWithName:@"HomePage" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"homePageBoard"];
     hpVC.title = @"主页";
     NavigationController *navHp = [[NavigationController alloc] initWithRootViewController:hpVC];
     
@@ -50,9 +50,10 @@
     NavigationController *navDic = [[NavigationController alloc] initWithRootViewController:disVC];
     
     // mine
-    MineViewController *mineVC = [[MineViewController alloc] init];
+    MineViewController *mineVC = [[UIStoryboard storyboardWithName:@"Mine" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"mineBoard"];
     mineVC.title = @"我的";
     NavigationController *navMine = [[NavigationController alloc] initWithRootViewController:mineVC];
+
     
     [self setViewControllers:@[navHp, navDic,navMine]];
     

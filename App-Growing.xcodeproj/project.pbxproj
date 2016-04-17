@@ -54,6 +54,9 @@
 		FE76DF7B1CBFDAD100CBD817 /* tabbar_normal_background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FE76DF671CBFDAD100CBD817 /* tabbar_normal_background@2x.png */; };
 		FE76DF7C1CBFDAD100CBD817 /* tabbar_selected_background.png in Resources */ = {isa = PBXBuildFile; fileRef = FE76DF681CBFDAD100CBD817 /* tabbar_selected_background.png */; };
 		FE76DF7D1CBFDAD100CBD817 /* tabbar_selected_background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FE76DF691CBFDAD100CBD817 /* tabbar_selected_background@2x.png */; };
+		FEE7C49F1CC31496002D9DEC /* Mine.Storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEE7C49E1CC31496002D9DEC /* Mine.Storyboard */; };
+		FEE7C4A31CC317ED002D9DEC /* HomePage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEE7C4A21CC317ED002D9DEC /* HomePage.storyboard */; };
+		FEE7C4A61CC31D79002D9DEC /* UITableView+Flexible.m in Sources */ = {isa = PBXBuildFile; fileRef = FEE7C4A51CC31D79002D9DEC /* UITableView+Flexible.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -137,6 +140,10 @@
 		FE76DF671CBFDAD100CBD817 /* tabbar_normal_background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_normal_background@2x.png"; sourceTree = "<group>"; };
 		FE76DF681CBFDAD100CBD817 /* tabbar_selected_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabbar_selected_background.png; sourceTree = "<group>"; };
 		FE76DF691CBFDAD100CBD817 /* tabbar_selected_background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_selected_background@2x.png"; sourceTree = "<group>"; };
+		FEE7C49E1CC31496002D9DEC /* Mine.Storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Mine.Storyboard; sourceTree = "<group>"; };
+		FEE7C4A21CC317ED002D9DEC /* HomePage.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HomePage.storyboard; sourceTree = "<group>"; };
+		FEE7C4A41CC31D79002D9DEC /* UITableView+Flexible.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+Flexible.h"; sourceTree = "<group>"; };
+		FEE7C4A51CC31D79002D9DEC /* UITableView+Flexible.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Flexible.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +193,7 @@
 		D6D022581CBFAD5B00B70A87 /* HomePage */ = {
 			isa = PBXGroup;
 			children = (
+				FEE7C4A21CC317ED002D9DEC /* HomePage.storyboard */,
 				D6D022661CBFADBB00B70A87 /* HomePageViewController.h */,
 				D6D022671CBFADBB00B70A87 /* HomePageViewController.m */,
 			);
@@ -195,50 +203,9 @@
 		D6D022591CBFAD5B00B70A87 /* Mine */ = {
 			isa = PBXGroup;
 			children = (
+				FEE7C49E1CC31496002D9DEC /* Mine.Storyboard */,
 				D6D022691CBFADC700B70A87 /* MineViewController.h */,
 				D6D0226A1CBFADC700B70A87 /* MineViewController.m */,
-			);
-			path = Mine;
-			sourceTree = "<group>";
-		};
-		D6D0225A1CBFAD6600B70A87 /* Discover */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Discover;
-			sourceTree = "<group>";
-		};
-		D6D0225B1CBFAD6600B70A87 /* HomePage */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = HomePage;
-			sourceTree = "<group>";
-		};
-		D6D0225C1CBFAD6600B70A87 /* Mine */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Mine;
-			sourceTree = "<group>";
-		};
-		D6D0225D1CBFAD7300B70A87 /* Discover */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Discover;
-			sourceTree = "<group>";
-		};
-		D6D0225E1CBFAD7300B70A87 /* HomePage */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = HomePage;
-			sourceTree = "<group>";
-		};
-		D6D0225F1CBFAD7300B70A87 /* Mine */ = {
-			isa = PBXGroup;
-			children = (
 			);
 			path = Mine;
 			sourceTree = "<group>";
@@ -302,12 +269,9 @@
 		D6FB47C51CBFA05400282234 /* App-Growing */ = {
 			isa = PBXGroup;
 			children = (
+				FEE7C49A1CC31345002D9DEC /* Category */,
 				D6FB47ED1CBFAB8600282234 /* Controller */,
-				D6FB47F11CBFAB8600282234 /* View */,
-				D6FB47EE1CBFAB8600282234 /* Model */,
 				D6FB47F21CBFABD300282234 /* Root */,
-				D6FB47EC1CBFAB8600282234 /* Category */,
-				D6FB47EF1CBFAB8600282234 /* Util */,
 				D6FB47F01CBFAB8600282234 /* Vendor */,
 				FE76DF581CBFDAD100CBD817 /* Resource */,
 				D6FB47CA1CBFA05400282234 /* AppDelegate.h */,
@@ -347,13 +311,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		D6FB47EC1CBFAB8600282234 /* Category */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Category;
-			sourceTree = "<group>";
-		};
 		D6FB47ED1CBFAB8600282234 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -364,23 +321,6 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		D6FB47EE1CBFAB8600282234 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				D6D0225D1CBFAD7300B70A87 /* Discover */,
-				D6D0225E1CBFAD7300B70A87 /* HomePage */,
-				D6D0225F1CBFAD7300B70A87 /* Mine */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		D6FB47EF1CBFAB8600282234 /* Util */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Util;
-			sourceTree = "<group>";
-		};
 		D6FB47F01CBFAB8600282234 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
@@ -388,16 +328,6 @@
 				D6EB87451CC0E29D001936A1 /* ScrollViewController */,
 			);
 			path = Vendor;
-			sourceTree = "<group>";
-		};
-		D6FB47F11CBFAB8600282234 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				D6D0225A1CBFAD6600B70A87 /* Discover */,
-				D6D0225B1CBFAD6600B70A87 /* HomePage */,
-				D6D0225C1CBFAD6600B70A87 /* Mine */,
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		D6FB47F21CBFABD300282234 /* Root */ = {
@@ -456,6 +386,15 @@
 				D6EB87561CC0E9D5001936A1 /* Test */,
 			);
 			path = Images;
+			sourceTree = "<group>";
+		};
+		FEE7C49A1CC31345002D9DEC /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				FEE7C4A41CC31D79002D9DEC /* UITableView+Flexible.h */,
+				FEE7C4A51CC31D79002D9DEC /* UITableView+Flexible.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -548,6 +487,7 @@
 				FE76DF7A1CBFDAD100CBD817 /* tabbar_normal_background.png in Resources */,
 				D6FB47D21CBFA05400282234 /* Main.storyboard in Resources */,
 				D6FB47D71CBFA05400282234 /* LaunchScreen.xib in Resources */,
+				FEE7C4A31CC317ED002D9DEC /* HomePage.storyboard in Resources */,
 				D6EB873C1CC0DC24001936A1 /* Tab_Me_selected@2x.png in Resources */,
 				FE76DF741CBFDAD100CBD817 /* navigationbar_background_tall.png in Resources */,
 				D6EB87641CC0F3B4001936A1 /* 001.jpg in Resources */,
@@ -568,6 +508,7 @@
 				FE76DF711CBFDAD100CBD817 /* first_selected@2x.png in Resources */,
 				D6FB47D41CBFA05400282234 /* Images.xcassets in Resources */,
 				D6EB876B1CC0FC09001936A1 /* Tab_Discover_normal@2x.png in Resources */,
+				FEE7C49F1CC31496002D9DEC /* Mine.Storyboard in Resources */,
 				D6EB873E1CC0DC24001936A1 /* Tab_Me_normal@2x.png in Resources */,
 				FE76DF6E1CBFDAD100CBD817 /* first_normal.png in Resources */,
 			);
@@ -641,6 +582,7 @@
 				D6D022811CBFB3B900B70A87 /* ViewController3.m in Sources */,
 				D6FB47F81CBFACC100282234 /* NavigationController.m in Sources */,
 				D6D022681CBFADBB00B70A87 /* HomePageViewController.m in Sources */,
+				FEE7C4A61CC31D79002D9DEC /* UITableView+Flexible.m in Sources */,
 				D6D0227F1CBFB3B900B70A87 /* ViewController1.m in Sources */,
 				D6EB87371CC0D86E001936A1 /* TabBarController.m in Sources */,
 				D6EB87521CC0E324001936A1 /* BannerView.m in Sources */,
