@@ -1,0 +1,47 @@
+PODS:
+  - AFNetworking (2.6.3):
+    - AFNetworking/NSURLConnection (= 2.6.3)
+    - AFNetworking/NSURLSession (= 2.6.3)
+    - AFNetworking/Reachability (= 2.6.3)
+    - AFNetworking/Security (= 2.6.3)
+    - AFNetworking/Serialization (= 2.6.3)
+    - AFNetworking/UIKit (= 2.6.3)
+  - AFNetworking/NSURLConnection (2.6.3):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.6.3):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.6.3)
+  - AFNetworking/Security (2.6.3)
+  - AFNetworking/Serialization (2.6.3)
+  - AFNetworking/UIKit (2.6.3):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - KMNavigationBarTransition (0.0.6)
+  - MBProgressHUD (0.9.2)
+  - PKRevealController (2.0.6)
+  - RDVTabBarController (1.1.9)
+  - YYKit (1.0.5):
+    - YYKit/no-arc (= 1.0.5)
+  - YYKit/no-arc (1.0.5)
+
+DEPENDENCIES:
+  - AFNetworking (~> 2.6)
+  - KMNavigationBarTransition
+  - MBProgressHUD (~> 0.9.2)
+  - PKRevealController (~> 2.0.6)
+  - RDVTabBarController
+  - YYKit
+
+SPEC CHECKSUMS:
+  AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
+  KMNavigationBarTransition: 21f653c2c95f5f3abad364becc143040c5be93d2
+  MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
+  PKRevealController: ffb45a16f5a5032ad90a3d16e5cbb0d8e035bd58
+  RDVTabBarController: 67794f7a7a37f8e32f046f85ac67d06ab92d624a
+  YYKit: f2654fe525de2283648db957bddb37ddd8e06549
+
+COCOAPODS: 0.39.0

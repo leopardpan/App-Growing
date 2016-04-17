@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--首页-->
+        <scene sceneID="Riy-0B-euK">
+            <objects>
+                <viewController storyboardIdentifier="homePageBoard" id="bwm-BU-ztR" customClass="HomePageViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IUs-9B-837"/>
+                        <viewControllerLayoutGuide type="bottom" id="Q56-Jg-rlE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uC2-tg-ieZ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k05-qT-Z9I" customClass="BannerView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="d6r-oo-5Vc"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="k05-qT-Z9I" secondAttribute="trailing" id="CPn-AS-Zol"/>
+                            <constraint firstItem="k05-qT-Z9I" firstAttribute="leading" secondItem="uC2-tg-ieZ" secondAttribute="leading" id="Kh2-JG-HTE"/>
+                            <constraint firstItem="k05-qT-Z9I" firstAttribute="top" secondItem="uC2-tg-ieZ" secondAttribute="top" id="wvC-Wr-U5T"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="首页" id="A7k-CX-VNl"/>
+                    <connections>
+                        <outlet property="bannerView" destination="k05-qT-Z9I" id="bnd-Tb-ew9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wOz-gK-dmo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="701.33333333333337" y="426"/>
+        </scene>
+    </scenes>
+</document>

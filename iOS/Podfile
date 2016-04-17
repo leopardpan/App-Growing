@@ -1,0 +1,18 @@
+platform :ios, '7.0'
+
+pod 'YYKit'
+pod 'RDVTabBarController'
+pod 'KMNavigationBarTransition'
+
+pod 'AFNetworking', '~> 2.6'
+pod 'MBProgressHUD', '~> 0.9.2'
+pod 'PKRevealController', '~> 2.0.6'
+
+# GPUImage
+# PDTSimpleCalendar
+# MagicalRecord
+
+# pod 'IBAnimatable'
+
+
+
